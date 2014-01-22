@@ -1,14 +1,11 @@
 <% provide(:title, 'Sign up') %>
 <h1>Sign up</h1>
-describe "signup" do
 
-before { visit signup_path }
 <div class="row">
   <div class="span6 offset3">
     <%= form_for(@user) do |f| %>
       <%= render 'shared/error_messages' %>
-      describe "with invalid information" do
-
+      
       <%= f.label :name %>
       <%= f.text_field :name %>
 
@@ -22,12 +19,6 @@ before { visit signup_path }
       <%= f.password_field :password_confirmation %>
 
       <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
-      describe "after submission" do
-        before { click_button submit }
-
-        it { should have_title('Sign up') }
-        it { should have_content('error') }
-      end
     <% end %>
   </div>
 </div>
