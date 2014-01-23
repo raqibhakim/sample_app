@@ -10,6 +10,16 @@ $grayMediumLight: #eaeaea;
   box-sizing: border-box;
 }
 
+#micropost-counter {
+  text-align: right;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  cursor: default;
+  margin-top: -10px;
+}
+
+
 /* miscellaneous */
 
 .debug_dump {
